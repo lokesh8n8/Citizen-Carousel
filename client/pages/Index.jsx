@@ -6,6 +6,7 @@ export default function Index() {
   const [agreement1, setAgreement1] = useState(false);
   const [agreement2, setAgreement2] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isCarouselPaused, setIsCarouselPaused] = useState(false);
 
   // Carousel background images
 
@@ -31,18 +32,24 @@ export default function Index() {
 
 
 
-  // Auto-rotate carousel every 6 seconds
+  // Auto-rotate carousel every 5 seconds
   useEffect(() => {
+    if (isCarouselPaused) return;
+    
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-    }, 6000);
+    }, 5000);
     return () => clearInterval(interval);
-  }, [carouselImages.length]);
+  }, [carouselImages.length, isCarouselPaused]);
 
   return (
     <div className="page-container">
       {/* Hero Section */}
-      <section className="hero-section">
+      <section 
+        className="hero-section"
+        onMouseEnter={() => setIsCarouselPaused(true)}
+        onMouseLeave={() => setIsCarouselPaused(false)}
+      >
         {/* Carousel Background */}
         <div className="hero-background">
           <div className="carousel-container">

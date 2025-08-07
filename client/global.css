@@ -93,7 +93,6 @@ input {
   font-family: inherit;
 }
 
-/* Remove any remaining Tailwind classes by providing fallbacks */
 .container {
   width: 100%;
   max-width: 1200px;

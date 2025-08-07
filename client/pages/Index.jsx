@@ -8,19 +8,34 @@ export default function Index() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Carousel background images
+
+  // English-Version
+
+  // const carouselImages = [
+  //   "/Citizen-Services-V3.png?width=3070",
+  //   "/Dashboard-V3.png?width=3070",
+  //   "/Citizen-Tree-V3.png?width=3070", 
+  //   "/Scheme-V3.png?width=3070",
+  //   "/Chatbot-Interface-V3.png?width=3070"
+  // ];
+
+  // Hindi Version
+
   const carouselImages = [
-    "/Citizen-redesign.png?width=3070",
-    "/Citizen-Tree.png?width=3070", 
-    "/Citizen-bot.png?width=3070",
-    "/Citizen-Scheme.png?width=3070",
-    "/Citizen-Dashboard.png?width=3070"
+    "/Citizen-Services-Hindi.png?width=3070",
+    "/Dashboard-Hindi.png?width=3070",
+    "/Citizen-Tree-Hindi.png?width=3070", 
+    "/Scheme-Hindi.png?width=3070",
+    "/Chatbot-Interface-Hindi.png?width=3070"
   ];
 
-  // Auto-rotate carousel every 5 seconds
+
+
+  // Auto-rotate carousel every 6 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [carouselImages.length]);
 

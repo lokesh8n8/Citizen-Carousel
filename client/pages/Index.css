@@ -108,8 +108,10 @@
 /* Hero Section Styles */
 .hero-section {
   position: relative;
-  width: 1535px;
-  height: 792px;
+  width: 100%;
+  max-width: 1535px;
+  height: 100vh;
+  min-height: 600px;
   overflow: hidden;
   margin: 0 auto;
   margin-top: 0;
@@ -512,7 +514,9 @@
   
   .hero-section {
     width: 100%;
-    max-width: 1535px;
+    max-width: none;
+    height: 100vh;
+    min-height: 600px;
   }
   
   .hero-content {
@@ -530,6 +534,11 @@
   .navigation {
     flex-wrap: wrap;
     gap: 12px;
+  }
+  
+  .hero-section {
+    height: 100vh;
+    min-height: 500px;
   }
   
   .hero-content {

@@ -13,21 +13,21 @@ export default function Index() {
   // English-Version
 
   const carouselImages = [
-    "/Citizen-Services-V3.png?width=3070",
-    "/Dashboard-V3.png?width=3070",
-    "/Citizen-Tree-V3.png?width=3070", 
-    "/Scheme-V3.png?width=3070",
-    "/Chatbot-Interface-V3.png?width=3070"
+    "/Citizen-Services-V3.png",
+    "/Dashboard-V3.png",
+    "/Citizen-Tree-V3.png", 
+    "/Scheme-V3.png",
+    "/Chatbot-Interface-V3.png"
   ];
 
   // Hindi Version
 
   // const carouselImages = [
-  //   "/Citizen-Services-Hindi.png?width=3070",
-  //   "/Dashboard-Hindi.png?width=3070",
-  //   "/Citizen-Tree-Hindi.png?width=3070", 
-  //   "/Scheme-Hindi.png?width=3070",
-  //   "/Chatbot-Interface-Hindi.png?width=3070"
+  //   "/Citizen-Services-Hindi.png",
+  //   "/Dashboard-Hindi.png",
+  //   "/Citizen-Tree-Hindi.png", 
+  //   "/Scheme-Hindi.png",
+  //   "/Chatbot-Interface-Hindi.png"
   // ];
 
 
